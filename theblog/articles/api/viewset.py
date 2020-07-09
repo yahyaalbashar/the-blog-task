@@ -37,7 +37,7 @@ class RetrieveArticleAPIView(RetrieveAPIView):
 
 class ArticleLikeAPI(APIView):
 
-    authentication_classes = (authentication.SessionAuthentication,)
+    authentication_classes = (authentication.SessionAuthentication,authentication.BasicAuthentication)
     permission_classes = (permissions.IsAuthenticated,)
 
     def get(self, request, id=None, format=None):
