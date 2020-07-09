@@ -17,7 +17,7 @@ def send_mail(user,article):
         """uncomment the belwo line to get sendgri api key 
         from your environment varliable if it is configured"""
         # sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
-        sg = SendGridAPIClient('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')
+        sg = SendGridAPIClient('SENDGRID_API_KEY')
         response = sg.send(message)
         print(response.status_code)
         print(response.body)
