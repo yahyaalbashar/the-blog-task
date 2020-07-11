@@ -16,7 +16,7 @@
   - run the server via command python manage.py runserver
 ## Important for sendgrid:
   sendgrid is cloud-based email delivery platform. you have to have an account and an API key (Important) please register [here](https://signup.sendgrid.com/).
-  after getting your API key, open theblog/utils.py file and place your API key or see how to create and enviornment variable see [here](https://app.sendgrid.com/guide/integrate/langs/python).
+  after getting your API key, open theblog/utils.py file and place your API key or see how to create a enviornment variable see [here](https://app.sendgrid.com/guide/integrate/langs/python).
   in the project settings.py file set the sender email and reciever email to send an email to the admin on every article liked by a user:
 #### SENDER_EMAIL='yoursender@email.com'
 #### RECIEVER_EMAIL='yourreciever@email.com'
